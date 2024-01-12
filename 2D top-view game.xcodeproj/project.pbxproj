@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01712BB02AE20ABE00A23D36 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01712BAF2AE20ABE00A23D36 /* main.cpp */; };
+		01712BB82AE20ACE00A23D36 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01712BB72AE20ACE00A23D36 /* OpenGL.framework */; };
+		01712BBA2AE20AD500A23D36 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01712BB92AE20AD500A23D36 /* GLUT.framework */; };
+		01712BD92AE57C7800A23D36 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01712BD82AE57C7800A23D36 /* libSDL2-2.0.0.dylib */; };
+		01712BDB2AE57D9200A23D36 /* libSDL2_mixer-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01712BDA2AE57D9100A23D36 /* libSDL2_mixer-2.0.0.dylib */; };
+		01712BE82AE5936500A23D36 /* alien.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01712BE32AE5907100A23D36 /* alien.mp3 */; };
+		01712BE92AE5936500A23D36 /* Breakout.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01712BE72AE5907200A23D36 /* Breakout.mp3 */; };
+		01712BEA2AE5936500A23D36 /* collectable.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01712BE42AE5907100A23D36 /* collectable.mp3 */; };
+		01712BEB2AE5936500A23D36 /* lose.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01712BE52AE5907100A23D36 /* lose.mp3 */; };
+		01712BEC2AE5936500A23D36 /* obstacle.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01712BE62AE5907200A23D36 /* obstacle.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01712BAA2AE20ABE00A23D36 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 0;
+			files = (
+				01712BE82AE5936500A23D36 /* alien.mp3 in CopyFiles */,
+				01712BE92AE5936500A23D36 /* Breakout.mp3 in CopyFiles */,
+				01712BEA2AE5936500A23D36 /* collectable.mp3 in CopyFiles */,
+				01712BEB2AE5936500A23D36 /* lose.mp3 in CopyFiles */,
+				01712BEC2AE5936500A23D36 /* obstacle.mp3 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01712BAC2AE20ABE00A23D36 /* 2D top-view game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2D top-view game"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01712BAF2AE20ABE00A23D36 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		01712BB72AE20ACE00A23D36 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		01712BB92AE20AD500A23D36 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		01712BBC2AE5281100A23D36 /* space-theme-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "space-theme-9.jpg"; path = "../../../../../../../Downloads/space-theme-9.jpg"; sourceTree = "<group>"; };
+		01712BD82AE57C7800A23D36 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "ExternalLibraries/sdl2/2.28.4/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		01712BDA2AE57D9100A23D36 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "ExternalLibraries/sdl2_mixer/2.6.3_1/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
+		01712BE32AE5907100A23D36 /* alien.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien.mp3; path = audio/alien.mp3; sourceTree = SOURCE_ROOT; };
+		01712BE42AE5907100A23D36 /* collectable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = collectable.mp3; path = audio/collectable.mp3; sourceTree = SOURCE_ROOT; };
+		01712BE52AE5907100A23D36 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lose.mp3; path = audio/lose.mp3; sourceTree = SOURCE_ROOT; };
+		01712BE62AE5907200A23D36 /* obstacle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = obstacle.mp3; path = audio/obstacle.mp3; sourceTree = SOURCE_ROOT; };
+		01712BE72AE5907200A23D36 /* Breakout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Breakout.mp3; path = audio/Breakout.mp3; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01712BA92AE20ABE00A23D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01712BDB2AE57D9200A23D36 /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
+				01712BD92AE57C7800A23D36 /* libSDL2-2.0.0.dylib in Frameworks */,
+				01712BBA2AE20AD500A23D36 /* GLUT.framework in Frameworks */,
+				01712BB82AE20ACE00A23D36 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01712BA32AE20ABE00A23D36 = {
+			isa = PBXGroup;
+			children = (
+				01712BAE2AE20ABE00A23D36 /* 2D top-view game */,
+				01712BAD2AE20ABE00A23D36 /* Products */,
+				01712BB62AE20ACE00A23D36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01712BAD2AE20ABE00A23D36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01712BAC2AE20ABE00A23D36 /* 2D top-view game */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01712BAE2AE20ABE00A23D36 /* 2D top-view game */ = {
+			isa = PBXGroup;
+			children = (
+				01712BCD2AE566C000A23D36 /* audio */,
+				01712BBB2AE5263400A23D36 /* Images */,
+				01712BAF2AE20ABE00A23D36 /* main.cpp */,
+			);
+			path = "2D top-view game";
+			sourceTree = "<group>";
+		};
+		01712BB62AE20ACE00A23D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01712BDA2AE57D9100A23D36 /* libSDL2_mixer-2.0.0.dylib */,
+				01712BD82AE57C7800A23D36 /* libSDL2-2.0.0.dylib */,
+				01712BB92AE20AD500A23D36 /* GLUT.framework */,
+				01712BB72AE20ACE00A23D36 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01712BBB2AE5263400A23D36 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				01712BBC2AE5281100A23D36 /* space-theme-9.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		01712BCD2AE566C000A23D36 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				01712BE32AE5907100A23D36 /* alien.mp3 */,
+				01712BE72AE5907200A23D36 /* Breakout.mp3 */,
+				01712BE42AE5907100A23D36 /* collectable.mp3 */,
+				01712BE52AE5907100A23D36 /* lose.mp3 */,
+				01712BE62AE5907200A23D36 /* obstacle.mp3 */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01712BAB2AE20ABE00A23D36 /* 2D top-view game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01712BB32AE20ABE00A23D36 /* Build configuration list for PBXNativeTarget "2D top-view game" */;
+			buildPhases = (
+				01712BA82AE20ABE00A23D36 /* Sources */,
+				01712BA92AE20ABE00A23D36 /* Frameworks */,
+				01712BAA2AE20ABE00A23D36 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2D top-view game";
+			productName = "2D top-view game";
+			productReference = 01712BAC2AE20ABE00A23D36 /* 2D top-view game */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01712BA42AE20ABE00A23D36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					01712BAB2AE20ABE00A23D36 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 01712BA72AE20ABE00A23D36 /* Build configuration list for PBXProject "2D top-view game" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01712BA32AE20ABE00A23D36;
+			productRefGroup = 01712BAD2AE20ABE00A23D36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01712BAB2AE20ABE00A23D36 /* 2D top-view game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01712BA82AE20ABE00A23D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01712BB02AE20ABE00A23D36 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01712BB12AE20ABE00A23D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
+				NEW_SETTING2 = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				tmp = "";
+			};
+			name = Debug;
+		};
+		01712BB22AE20ABE00A23D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
+				NEW_SETTING2 = "";
+				SDKROOT = macosx;
+				tmp = "";
+			};
+			name = Release;
+		};
+		01712BB42AE20ABE00A23D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/ExternalLibraries/sdl2/2.28.4/include",
+					"${SRCROOT}/ExternalLibraries/sdl2_mixer/2.6.3_1/include",
+					"${SRCROOT}/ExternalLibraries/SDL2-/include",
+					"${SRCROOT}/audio/Breakout.mp3",
+					"${SRCROOT}/audio/alien.mp3",
+					"${SRCROOT}/audio/collectable.mp3",
+					"${SRCROOT}/audio/lose.mp3",
+					"${SRCROOT}/audio/obstacle.mp3",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExternalLibraries/SFML/lib",
+					"$(PROJECT_DIR)/ExternalLibraries/irrKlang/bin/macosx-gcc",
+					"$(PROJECT_DIR)/ExternalLibraries/sdl2/2.28.4/lib",
+					"$(PROJECT_DIR)/ExternalLibraries/sdl2_mixer/2.6.3_1/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01712BB52AE20ABE00A23D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/ExternalLibraries/sdl2/2.28.4/include",
+					"${SRCROOT}/ExternalLibraries/sdl2_mixer/2.6.3_1/include",
+					"${SRCROOT}/ExternalLibraries/SDL2-/include",
+					"${SRCROOT}/audio/Breakout.mp3",
+					"${SRCROOT}/audio/alien.mp3",
+					"${SRCROOT}/audio/collectable.mp3",
+					"${SRCROOT}/audio/lose.mp3",
+					"${SRCROOT}/audio/obstacle.mp3",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExternalLibraries/SFML/lib",
+					"$(PROJECT_DIR)/ExternalLibraries/irrKlang/bin/macosx-gcc",
+					"$(PROJECT_DIR)/ExternalLibraries/sdl2/2.28.4/lib",
+					"$(PROJECT_DIR)/ExternalLibraries/sdl2_mixer/2.6.3_1/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01712BA72AE20ABE00A23D36 /* Build configuration list for PBXProject "2D top-view game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01712BB12AE20ABE00A23D36 /* Debug */,
+				01712BB22AE20ABE00A23D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01712BB32AE20ABE00A23D36 /* Build configuration list for PBXNativeTarget "2D top-view game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01712BB42AE20ABE00A23D36 /* Debug */,
+				01712BB52AE20ABE00A23D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01712BA42AE20ABE00A23D36 /* Project object */;
+}
